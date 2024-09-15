@@ -128,7 +128,7 @@ export function Component() {
                 alt="Lav Patel"
                 className="rounded-full"
                 height="120"
-                src="/placeholder.jpeg"
+                src="/lav-patel.jpeg"
                 style={{
                   aspectRatio: "120/120",
                   objectFit: "cover",
