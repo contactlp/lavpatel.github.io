@@ -245,7 +245,7 @@ export function Component() {
                   Resume
                 </h2>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  Download Lav's comprehensive resume to learn more about his
+                  Download Lav &apos;s comprehensive resume to learn more about his
                   professional experience, skills, and achievements.
                 </p>
                 <div className="mt-6">
