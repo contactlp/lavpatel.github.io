@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { CpuIcon, GithubIcon } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
+import Script from 'next/script'; // Import Script component
 
 export function Component() {
   const experiences = [
@@ -59,6 +60,87 @@ export function Component() {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Lav Patel - Team Lead Software Engineer" />
+        <meta
+          property="og:description"
+          content="Objective-driven Senior Team Lead Software Engineer with a wealth of experience in spearheading the development of cutting-edge solutions within the healthcare industry."
+        />
+        <meta property="og:image" content="https://lavpatel.com/lav-patel.jpeg" />
+        <meta property="og:url" content="https://lavpatel.com" />
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        {/* Structured Data for Person */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Person",
+              "name": "Lav Patel",
+              "jobTitle": "Team Lead Software Engineer",
+              "image": "https://lavpatel.com/lav-patel.jpeg",
+              "url": "https://lavpatel.com",
+              "sameAs": [
+                "https://www.linkedin.com/in/lav-patel/",
+                "https://github.com/lav-patel"
+              ]
+            })
+          }}
+        />
+        {/* Structured Data for Website */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "WebSite",
+              "url": "https://lavpatel.com",
+              "name": "Lav Patel",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://lavpatel.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+        {/* Structured Data for Site Navigation */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 1,
+                  "name": "Home",
+                  "url": "https://lavpatel.com/"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 2,
+                  "name": "About",
+                  "url": "https://lavpatel.com/#about"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 3,
+                  "name": "Resume",
+                  "url": "https://drive.google.com/file/d/1OxyCbacRnMSqhT3FJBeIUOHK05La6tDX/view"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 4,
+                  "name": "Contact",
+                  "url": "mailto:lavpatel39@gmail.com"
+                }
+              ]
+            })
+          }}
+        />
       </Head>
       <header className="px-4 lg:px-6 h-14 flex items-center bg-gray-900 text-white fixed left-0 right-0">
         <Link className="flex items-center justify-center" href="/">
@@ -121,12 +203,9 @@ export function Component() {
                 alt="Portrait of Lav Patel"
                 className="rounded-full"
                 height={120}
-                src="/lav-patel.jpeg"
-                style={{
-                  aspectRatio: "1 / 1",
-                  objectFit: "cover",
-                }}
+                src="https://lavpatel.com/lav-patel.jpeg"
                 width={120}
+                priority={true} // Preload the image
               />
               <br />
               <h1 className="text-3xl font-bold text-gray-700">Lav Patel</h1>
