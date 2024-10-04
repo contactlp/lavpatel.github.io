@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lavpatel.com
+
+# Sitemaps
+Sitemap: https://lavpatel.com/sitemap.xml
