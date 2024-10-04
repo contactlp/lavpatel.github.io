@@ -12,7 +12,9 @@ import { CpuIcon, GithubIcon } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
 import Script from 'next/script'; // Import Script component
 
+
 export function Component() {
+  const canonicalUrl = 'https://lavpatel.com';
   const experiences = [
     {
       period: "Feb '21 - Present",
@@ -189,6 +191,7 @@ export function Component() {
             <GithubIcon className="h-6 w-6" />
           </Link>
         </div>
+        <link rel="canonical" href={canonicalUrl} />
       </header>
       <main className="flex-1">
         <section
