@@ -17,10 +17,8 @@ const BlogPage = () => {
       <ul>
         {blogs.map((blog, index) => (
           <li key={index} className="mb-4">
-            <Link href={blog.link}>
-              <a className="text-xl font-semibold text-blue-600 hover:underline">
-                {blog.title}
-              </a>
+            <Link href={blog.link} className="text-xl font-semibold text-blue-600 hover:underline">
+              {blog.title}
             </Link>
             <p className="text-gray-600">{blog.date}</p>
           </li>
