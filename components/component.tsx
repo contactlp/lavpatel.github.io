@@ -130,12 +130,18 @@ export function Component() {
                 {
                   "@type": "SiteNavigationElement",
                   "position": 3,
+                  "name": "Blog",
+                  "url": "https://lavpatel.com/blog"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 4,
                   "name": "Resume",
                   "url": "https://drive.google.com/file/d/1OxyCbacRnMSqhT3FJBeIUOHK05La6tDX/view"
                 },
                 {
                   "@type": "SiteNavigationElement",
-                  "position": 4,
+                  "position": 5,
                   "name": "Contact",
                   "url": "mailto:lavpatel39@gmail.com"
                 }
@@ -161,6 +167,12 @@ export function Component() {
             href="#about"
           >
             About
+          </Link>
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="/blog"
+          >
+            Blog
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
