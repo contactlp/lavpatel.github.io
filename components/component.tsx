@@ -8,7 +8,7 @@ import {
   CardContent,
   Card,
 } from "@/components/ui/card";
-import { CpuIcon, GithubIcon } from "lucide-react";
+import { CpuIcon, GithubIcon, TwitterIcon } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
 import Script from 'next/script'; // Import Script component
 
@@ -182,6 +182,13 @@ export function Component() {
             aria-label="LinkedIn"
           >
             <LinkedinIcon className="h-6 w-6" />
+          </Link>
+          <Link
+            className="text-gray-400 hover:text-gray-200"
+            href="https://x.com/lav_p_patel"
+            aria-label="X | Twitter"
+          >
+            <TwitterIcon className="h-6 w-6" />
           </Link>
           <Link
             className="text-gray-400 hover:text-gray-200"
